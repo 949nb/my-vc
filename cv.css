@@ -1,0 +1,51 @@
+body {
+    background: #2D3540;
+    color: aliceblue;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.top-nav-bar ul li {
+    list-style: none;
+    float: right;
+    margin-top: 2px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.top-nav-bar ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #CBC9CB;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+    display: block;
+    padding-top:4px;
+}
+
+.top-nav-bar ul li a:hover {
+    border-bottom: 3px solid rosybrown
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: Aharoni;
+    color: lightcoral;
+    padding-top:6px;
+    padding-left: 30px;
+}
+
+.top-bar {
+    margin-top: 30px;
+}
