@@ -1,6 +1,7 @@
 body {
     background: #2D3540;
     color: aliceblue;
+    margin: 0;
 }
 
 .clearfix::after{
@@ -12,9 +13,9 @@ body {
 .top-nav-bar ul li {
     list-style: none;
     float: right;
-    margin-top: 2px;
     padding-left: 20px;
     padding-right: 30px;
+    margin-top: 5px;
 }
 
 .top-nav-bar ul li a {
@@ -48,4 +49,16 @@ a {
 
 .top-bar {
     margin-top: 30px;
+    position: fixed;
+    width: 100%
+}
+
+.banner {
+    height: 700px;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%; 
+    height: 100%;
 }
