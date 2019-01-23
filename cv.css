@@ -2,6 +2,7 @@ body {
     background: #2D3540;
     color: white;
     margin: 0;
+    font-family: STZhongsong;
 }
 
 * {
@@ -73,8 +74,7 @@ a {
 
 .my-card {
     max-width: 929px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: -390px auto 0 auto;
     background-color: rgb(252, 241, 223)
 }
 
@@ -143,7 +143,7 @@ a {
 }
 
 .icon-size {
-    padding: 5px 30px;
+    padding: 10px 30px;
 }
 
 .my-card footer a {
@@ -160,3 +160,35 @@ a {
 .my-card footer svg:hover {
     fill: rgb(106, 47, 49);
 }
+
+.download a {
+    display: inline-block;
+    width: 250px;
+    background-color: rgb(237, 237, 237);
+    line-height: 0em;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 26px;
+    color: #3D4451;
+}
+
+.download a:hover{
+    background-color: rgb(211, 211, 211);
+    box-shadow: 0px 6px 14px -4px rgba(0,0,0,0.47);
+}
+
+.download {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.jieshao {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.ziwojieshao {
+    border-bottom: 1px solid #FFFFFF;
+    display: inline-block;
+}
+
