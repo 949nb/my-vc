@@ -23,7 +23,9 @@ li {
 .loading-page{
     display: none;
     background: #999;
-    height: 100vh;
+    position: fixed;
+    left: 0; top: 0; width: 100%; height: 100%;
+    z-index: 3;
 }
 
 .loading{
@@ -74,7 +76,7 @@ li {
     background: #FFFFFF;
     color: #3D4451;
     padding: 10px 0px;
-    transition: all 1.5s;
+    transition: all 1.2s;
     z-index: 1;
     box-shadow: 0px 6px 14px -4px rgba(0,0,0,0.47);
 }
@@ -89,17 +91,22 @@ li {
 }
 
 .submenu {
-    border: 1px solid red;
     display: none;
 }
 .submenu.active{
     display: block;
     position: absolute;
     left: 0;
+    background: #FFFFFF;
+    color: #3D4451;
+    box-shadow: 0px 6px 14px -4px rgba(0,0,0,0.47);
+    padding: 5px 5px;
+    transition: all 1s;
 }
 
 .submenu li{
     clear: both;
+    cursor:pointer；
 }
 
 .top-nav-bar ul li a {
