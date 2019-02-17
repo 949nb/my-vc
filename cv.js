@@ -24,6 +24,13 @@ subMenu.onmouseleave = function(){
 
 var aTags = document.querySelectorAll(".top-nav-bar > ul > li > a")
 
+//点击跳转事件
+function animate(time){
+    requestAnimationFrame(animate);
+    TWEEN.update(time);
+}
+requestAnimationFrame(animate);
+
 for(var i = 0; i < aTags.length; i++){
     aTags[i].onclick = function(x){
         x.preventDefault()
@@ -32,6 +39,23 @@ for(var i = 0; i < aTags.length; i++){
         console.log(href)
         var element = document.querySelector(href)
         var top = element.offsetTop
-        window.scrollTo(0,top - 80)
+        //window.scrollTo(0, top - 80)
+        let currentTop = window.scrollY
+        let targetTop = top -80
+        let s = targetTop - currentTop
+        var coords = {y:currentTop};
+        var t = Math.abs((s/100)*300)
+        if(t>500){t = 500}
+        var tween = new TWEEN.Tween(coords)
+        .to({y:targetTop},t)
+        .easing(TWEEN.Easing.Quadratic.InOut)
+        .onUpdate(
+            function(){
+            window.scrollTo(0,coords.y);
+        }
+        )
+        .start();
     }
 }
+//点击跳转事件 Tween缓动
+    
