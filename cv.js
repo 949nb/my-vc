@@ -58,4 +58,6 @@ for(var i = 0; i < aTags.length; i++){
     }
 }
 //点击跳转事件 Tween缓动
+
+console.log(typeof jQuery)
     

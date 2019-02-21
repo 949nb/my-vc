@@ -4,6 +4,7 @@
     <title>MY 949CV</title>
     <link rel="stylesheet" href="./cv.css">
     <script src="//at.alicdn.com/t/font_1027511_86ehrmcv2k4.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style type="text/css">
         .icon {
            width: 35px; 
@@ -140,9 +141,12 @@
         </div>
     <div id="works" class="works">
         <h2>作品集</h2>
-        <nav>所有  &nbsp;&nbsp;&nbsp;&nbsp;  框架 &nbsp;&nbsp;&nbsp;&nbsp;   原生
-                <div class=big-bar>
-                        <div class=bar></div>
+        <nav>
+            <span>所有&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+            <span>框架 &nbsp;&nbsp;&nbsp;</span>
+            <span>原生</span>
+                <div id="selectorScroll" class=big-bar>
+                        <div id="smallSelector" class=bar></div>
                     </div>
         </nav>
         <div class="works-img clearfix">
