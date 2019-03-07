@@ -59,5 +59,17 @@ for(var i = 0; i < aTags.length; i++){
 }
 //点击跳转事件 Tween缓动
 
-console.log(typeof jQuery)
-    
+//Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });

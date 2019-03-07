@@ -386,3 +386,18 @@ div.works .big-bar .bar {
 .big,.small {
     display: inline-block;
 }
+
+.swiper-container {
+    width: 911px;
+    height: 574px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

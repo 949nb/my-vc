@@ -2,7 +2,10 @@
 <html>
 <head>
     <title>MY 949CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./cv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
     <script src="//at.alicdn.com/t/font_1027511_86ehrmcv2k4.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style type="text/css">
@@ -140,26 +143,28 @@
         </div>
     <div id="works" class="works">
         <h2>作品集</h2>
-        <nav>
-            <span>所有&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-            <span>框架 &nbsp;&nbsp;&nbsp;</span>
-            <span>原生</span>
-                <div id="selectorScroll" class=big-bar>
-                        <div id="smallSelector" class=bar></div>
-                    </div>
-        </nav>
-        <div class="works-img clearfix">
-            <div class="big" style="float:left; margin-left: 6px;"><img src="./img/1.jpg" alt="bigworks"></div>
-            <div class="small"><img src="./img/2.jpg" alt="works"></div>
-            <div class="small" style="margin-top: 15px;"><img src="./img/3.jpg" alt="works"></div>
-            
-        </div>
     </div>
 
     </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/1.jpg" alt="bigworks" style="width: 574px;"></div>
+        <div class="swiper-slide"><img src="./img/2.jpg" alt="works"></div>
+        <div class="swiper-slide"><img src="./img/3.jpg" alt="works"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
-<script src="./cv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
+    <script src="./cv.js"></script>
 
 </body>
 </html>
