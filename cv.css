@@ -392,12 +392,17 @@ div.works .big-bar .bar {
     height: 574px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .swiper-slide {
+}
+.swiper-slide {
     font-size: 18px;
     background: #fff;
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}  
+#postMessageForm {
+    max-width: 929px;
+    margin: 20px auto;
+}
+

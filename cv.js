@@ -73,3 +73,5 @@ for(var i = 0; i < aTags.length; i++){
         prevEl: '.swiper-button-prev',
       },
     });
+
+    

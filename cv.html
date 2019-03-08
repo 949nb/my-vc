@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>MY 949CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="./cv.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
-    <script src="//at.alicdn.com/t/font_1027511_86ehrmcv2k4.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <head>
+        <title>MY 949CV</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="./cv.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
+        <script src="//at.alicdn.com/t/font_1027511_86ehrmcv2k4.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
     <style type="text/css">
         .icon {width: 35px; 
            height: 35px;
@@ -150,8 +150,8 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="./img/1.jpg" alt="bigworks" style="width: 574px;"></div>
-        <div class="swiper-slide"><img src="./img/2.jpg" alt="works"></div>
-        <div class="swiper-slide"><img src="./img/3.jpg" alt="works"></div>
+        <div class="swiper-slide"><img src="./img/2.jpg" alt="works"  style="width: 574px;"></div>
+        <div class="swiper-slide"><img src="./img/3.jpg" alt="works"  style="width: 574px;"></div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -159,12 +159,22 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
- 
+    <div class="message"></div>
+        <h2 style='max-width: 929px;margin: 20px auto;'>留言板</h2>
+        <form id="postMessageForm" action="">
+            <input type="text" name="content" autocomplete="off">
+            <input type="submit" value="提交">
+        </form>
+    </div>
+
+    <!--引入的js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
-    <script src="./cv.js"></script>
-
+    <!-- 存储服务 -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.12.0/dist/av-min.js"></script> 
+    <script src="./cv.js"></script> 
+    <script src="massage.js"></script>
 </body>
 </html>
