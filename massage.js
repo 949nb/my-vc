@@ -18,11 +18,11 @@ query.find().then(function (messageData) {//.find()查找Message数据库中的�
         messageList.appendChild(li)
     }//向页面添加获取的数据
 
-}).then(function (todos) {
-    // 更新成功
-}, function (error) {
-    // 异常处理
-});
+    }).then(function (todos) {
+        // 更新成功
+    }, function (error) {
+        // 异常处理
+    });
 
 var myForm = document.querySelector('#postMessageForm');
 
@@ -35,7 +35,7 @@ myForm.addEventListener('submit', function (e) {
         content: content
     }).then(function (object) {
         // console.log(object);//object中储存的是数据的信息
-        alert('存储成功');
+        location.reload();
     });
 });
 
