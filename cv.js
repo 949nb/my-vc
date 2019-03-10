@@ -52,7 +52,7 @@ for(var i = 0; i < aTags.length; i++){
         .onUpdate(
             function(){
             window.scrollTo(0,coords.y);
-        }
+            }
         )
         .start();
     }
