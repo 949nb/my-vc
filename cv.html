@@ -31,7 +31,7 @@
         <ul class="clearfix" style="margin:0; padding:0;">
             <li><a href="#">其他</a></li>
             <li><a href="https://www.jianshu.com/u/a8fc692ca1c6" target="_blank">博客</a></li>
-            <li><a href="#">工作经验</a></li>
+            <li><a href="#">留言板</a></li>
             <li id="subMenu">
                 <a href="#works">作品集</a>
                 <ul id="submenu" class="submenu">
@@ -54,7 +54,7 @@
     <div class="tupian-xinxi">
         <div class="main clearfix">
             <div class="touxiang">
-                <img src="./img/touxiang.png" alt="头像">
+                <!-- <img src="./img/touxiang.png" alt="头像"> -->
             </div>
             <div class="person-massage">
                     <span class="welcome">HELLO
@@ -66,11 +66,11 @@
                 <hr>
                 <dl>
                     <dt>年龄</dt>
-                    <dd>18</dd>
+                    <dd>23</dd>
                     <dt>所在城市</dt>
                     <dd>北京</dd>
                     <dt>邮箱</dt>
-                    <dd>1661346771@qq.com</dd>
+                    <dd>aninjaz@outlook.com</dd>
                     <dt>电话</dt>
                     <dd>13912345678</dd>
                     <dt>微信</dt>
@@ -103,7 +103,7 @@
     <a href="./works.pdf" target="_blank" download>下载PDF简历</a>
 </div>
 <div class="jieshao">
-    <p class=ziwojieshao> Hello！我是一名自学的前端工程师<br>目前在简书上写博客记录自己的学习进度。
+    <p class=ziwojieshao> Hello！我是一名自学的前端工程师<br>目前在<a href="https://www.jianshu.com/u/a8fc692ca1c6" style="color:lightskyblue">「简书」</a>上写博客记录自己的学习进度。
     </p>
 </div>
 <div id="jiNeng" class="jineng">
@@ -130,7 +130,7 @@
                     <div class="jindutiao"></div>
                 </div>
             </li>
-            <li>React.js
+            <li>DOM
                 <div class="jindu">
                     <div class="jindutiao"></div>
                 </div>
@@ -145,29 +145,30 @@
     </div>
 </div>
 <div id="works" class="works">
-    <h2>作品集</h2>
+    <h2>作品集</h2><p>(点击图片可以跳转预览)</p>
 </div>
 <!-- Swiper -->
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./img/1.jpg" alt="bigworks" style="width: 574px;"></div>
-        <div class="swiper-slide"><img src="./img/2.jpg" alt="works" style="width: 574px;"></div>
-        <div class="swiper-slide"><img src="./img/3.jpg" alt="works" style="width: 574px;"></div>
+<div class="mywork">
+    <div class="workone">
+        <div onclick="window.open('https://949nb.github.io/doubanMovie/1.html')" class="xiangmu douban"></div>
+        <div onclick="window.open('https://949nb.github.io/Canvas/canvas.html')" class="xiangmu canvas"></div>
+        <div onclick="window.open('https://949nb.github.io/newNavPage/navPage.html')" class="xiangmu inav"></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="worktwo">
+        <div onclick="window.open('http://www.cdxwcx.com')" class="xiangmu pickchu"></div>
+        <div onclick="window.open('https://949nb.github.io/appleStyleSlide/appleSlide.html')" class="xiangmu appplelike"></div>
+        <div onclick="window.open('https://949nb.github.io/activeCvvvvv/active.html')" class="xiangmu activevc"></div>
+    </div>
+   
 </div>
 <div class="message">
     <h2>留言板</h2>
     <form id="postMessageForm" action="">
         <ul id="messageList"></ul>
         <div id="inputList">
-            <span>姓名</span>
+            <span>姓名:</span>
             <input type="text" name="name" autocomplete="off">
-            <span>留言</span>
+            <span>留言:</span>
             <input type="text" name="content" autocomplete="off">
             <input type="submit" value="提交">
         </div>
@@ -176,10 +177,9 @@
 
 <!--引入的js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
-<!-- Swiper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
+
 <!-- 存储服务 -->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.12.0/dist/av-min.js"></script>
 <script src="./cv.js"></script>
 <script src="massage.js"></script>
